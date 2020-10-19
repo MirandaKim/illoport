@@ -26,7 +26,7 @@ const browserSync = require('browser-sync').create();
 /*   # Configs                      */
 /***********************************/
 
-let distPath = 'dist'; // location of distribution files
+let distPath = 'docs'; // location of distribution files
 
 /*************************************/
 /*   # Preview Dist                 */
