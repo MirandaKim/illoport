@@ -14,7 +14,7 @@ require('./html.task');
 /************************************************/
 /*
 
-  - Run task 'build' to optimize src content within the dist directory
+  - Run task 'build' to optimize src content within the docs directory
   - This will run a series of production tasks to create a complete production site.
   - Existing produciton files will be DELETED to make room for the new ones.
   - To preview the production site, see task previewDist (~/gulp/tasks/previewDist.task.js)
@@ -35,7 +35,7 @@ require('./html.task');
 /*   # Configs                      */
 /***********************************/
 
-let distPath = './dist';
+let distPath = './docs';
 let workingPath = './src';
 
 /*************************************/
@@ -87,7 +87,7 @@ gulp.task('build', gulp.series(
   (done) => {
     console.log(`
       -- --- ----------------------- --- --
-      -- --- BUILD COMPLETE (~/dist) --- --
+      -- --- BUILD COMPLETE (~/docs) --- --
       -- --- ----------------------- --- --
       `);
     done();
